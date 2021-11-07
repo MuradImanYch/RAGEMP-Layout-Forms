@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rage MP</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p>Global</p>
+            <p>Role Play</p>
+        </div>
+        <div class="formWrap">
+            <span><span id="errIco"></span> <span id="err"></span></span>
+            <form class="regForm">
+                <div>
+                    <i class="far fa-envelope"></i><input id="regEmail" type="text" placeholder="Введите почту" name="regEmail" />
+                </div>
+                <div>
+                   <i class="fas fa-lock"></i><input id="regPsw" type="password" placeholder="Придумайте пароль" name="regPsw" /> 
+                </div>
+                <div>
+                   <i class="fas fa-lock"></i><input id="regRePsw" type="password" placeholder="Повторите пароль" name="regRePsw" /> 
+                </div>
+                <button onsubmit="login()" name="regBtn" type="submit" id="regBtn">Создать аккаунт</button>
+                <div><a id="authorization">Авторизоваться</a></div>
+            </form>
+            <form class="logForm">
+                <div>
+                    <i class="far fa-envelope"></i><input id="logEmail" type="text" placeholder="Введите почту" name="logEmail" />
+                </div>
+                <div>
+                   <i class="fas fa-lock"></i><input id="logPsw" type="password" placeholder="Введите пароль" name="logPsw" /> 
+                </div>
+                <button type="submit" id="logBtn" name="logBtn">Войти</button>
+                <div><a id="create">Создать аккаунт</a><a id="forgot">Забыл пароль</a></div>
+            </form>
+            <form class="forgotForm">
+                <div>
+                    <i class="far fa-envelope"></i><input id="forgotEmail" type="text" placeholder="Введите почту" name="forgotEmail" />
+                </div>
+                <button type="submit" name="forgotBtn" id="forgotBtn">Отправить</button>
+                <div><a id="createFromForgot">Создать аккаунт</a><a id="authFromForgot">Авторизоваться</a></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/5f439b4246.js" crossorigin="anonymous"></script>
+</body>
+</html>

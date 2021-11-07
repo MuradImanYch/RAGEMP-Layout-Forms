@@ -1,0 +1,112 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+    background: url('../assets/img/bg.jpg') no-repeat center/cover;
+    height: 100vh;
+}
+.wrapper {
+    width: 400px;
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 100px auto;
+    box-shadow: 0px 0px 12px #07d100;
+}
+.wrapper .header {
+    text-align: center;
+    padding: 30px 0 0 0;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper .header p {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.wrapper .header p:first-child {
+    font-size: 2.4em;
+    color: #fff;
+}
+.wrapper .header p:last-child {
+    padding: 0 0 0 60px;
+    color: #07d100;
+}
+.wrapper .formWrap {
+    text-align: center;
+    font-size: 0.9em;
+    margin: 40px 0 0 0;
+    padding: 0 0 40px 0;
+}
+.wrapper .formWrap #err {
+    font-size: 0.9em;
+}
+.wrapper .formWrap input {
+    outline: none;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #07d100;
+    background: transparent;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 0 0 40px;
+}
+.wrapper .formWrap input:first-child {
+    margin: 15px 0 0 0;
+}
+.wrapper .formWrap input:not(:first-child) {
+    margin: 30px 0 0 0;
+}
+.wrapper .formWrap div {
+    position: relative;
+}
+.wrapper .formWrap div i {
+    position: absolute;
+    top: 38px;
+    left: 60px;
+    font-size: 1.1em;
+    color: #07d100;
+}
+.wrapper .formWrap button {
+    margin: 40px 0 0 0;
+    border: 0;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    background: #06bb00;
+    color: #fff;
+}
+.wrapper .formWrap button:hover {
+    background: #07d100;
+    transition: 0.4s;
+    box-shadow: 0px 0px 2px #07d100;
+}
+.wrapper .formWrap a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.wrapper .formWrap a:hover {
+    text-decoration: underline;
+}
+.wrapper .formWrap form div:last-child {
+    margin: 15px 0 0 0;
+}
+.wrapper .formWrap a:first-child {
+    margin: 0 10px 0 0;
+}
+.wrapper .formWrap a:last-child {
+    margin: 0 0 0 10px;
+}
+.logForm, .forgotForm {
+    display: none;
+}
